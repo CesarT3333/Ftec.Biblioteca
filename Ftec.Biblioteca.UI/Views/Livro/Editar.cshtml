@@ -1,0 +1,44 @@
+
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>Editar</h2>
+
+<form method="post" action="/livro/ProcessarUpdatePost">
+    <input type="hidden" name="livro.id" value="@ViewBag.livro.Id" />
+    <table>
+        <tr>
+            <td>Titulo:</td>
+            <td><input type="text" name="livro.titulo" value="@ViewBag.livro.Titulo" /></td>
+        </tr>
+        <tr>
+            <td>Autor:</td>
+            <td><input type="text" name="livro.autor" value="@ViewBag.livro.Autor" /></td>
+        </tr>
+        <tr>
+            <td>Isbn:</td>
+            <td><input type="text" name="livro.isbn" value="@ViewBag.livro.Isbn" /></td>
+        </tr>
+        <tr>
+            <td>Paginas:</td>
+            <td><input type="text" name="livro.paginas" value="@ViewBag.livro.Paginas" /></td>
+        </tr>
+        <tr>
+            <td>Editora:</td>
+            <td><input type="text" name="livro.editora" value="@ViewBag.livro.Editora" /></td>
+        </tr>
+        <tr>
+            <td>Edicao:</td>
+            <td><input type="text" name="livro.edicao" value="@ViewBag.livro.Edicao" /></td>
+        </tr>
+        <tr>
+            <td>Categoria:</td>
+            <td><input typr="text" name="livro.categoria" value="@ViewBag.livro.Categoria" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Enviar" /></td>
+        </tr>
+    </table>
+</form>
+

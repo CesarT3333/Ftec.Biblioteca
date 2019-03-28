@@ -1,0 +1,43 @@
+
+@{
+    ViewBag.Title = "Gravar";
+}
+
+<h2>Gravar Um Livro</h2>
+
+<form method="post" action="/livro/ProcessarGravacaoPost">
+    <table>
+        <tr>
+            <td>Titulo:</td>
+            <td><input type="text" name="livro.titulo" /></td>
+        </tr>
+        <tr>
+            <td>Autor:</td>
+            <td><input type="text" name="livro.autor" /></td>
+        </tr>
+        <tr>
+            <td>Isbn:</td>
+            <td><input type="text" name="livro.isbn" /></td>
+        </tr>
+        <tr>
+            <td>Paginas:</td>
+            <td><input type="text" name="livro.paginas" /></td>
+        </tr>
+        <tr>
+            <td>Editora:</td>
+            <td><input type="text" name="livro.editora" /></td>
+        </tr>
+        <tr>
+            <td>Edicao:</td>
+            <td><input type="text" name="livro.edicao" /></td>
+        </tr>
+        <tr>
+            <td>Categoria:</td>
+            <td><input typr="text" name="livro.categoria" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Enviar" /></td>
+        </tr>
+    </table>
+</form>
+
